@@ -8,7 +8,7 @@ I0 = 1
 R0 = 0
 
 alpha = 0.003
-beta = 0.25
+beta = 0.005
 
 # Dominio de tiempo (en horas)
 t_max = 1000
@@ -27,25 +27,28 @@ I_B = I0 * np.exp(-beta * t) + (alpha * S0 / (beta - alpha)) * (
 R_B = N - S_B - I_B
 
 # GRÁFICOS
-plt.figure(figsize=(10, 5))
-plt.plot(t, S_A, label="S_A(t) - susceptibles (Modelo A)")
-plt.plot(t, I_A, label="I_A(t) - infectados (Modelo A)")
-plt.xlabel("Tiempo [h]")
-plt.ylabel("Número de equipos")
-plt.title("Modelo A: sistema lineal sin recuperación")
-plt.legend()
-plt.grid(True)
+plt.style.use("default")
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.plot(t, S_A, label="S_A(t) - susceptibles (Modelo A)")
+ax.plot(t, I_A, label="I_A(t) - infectados (Modelo A)")
+ax.set_xlabel("Tiempo [h]")
+ax.set_ylabel("Número de equipos")
+ax.set_title("Modelo A: sistema lineal sin recuperación")
+ax.legend(frameon=False)
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
 plt.tight_layout()
-plt.show()
+plt.savefig("parte2/modelo_a.pdf", format="pdf", bbox_inches="tight")
 
-plt.figure(figsize=(10, 5))
-plt.plot(t, S_B, label="S_B(t) - susceptibles")
-plt.plot(t, I_B, label="I_B(t) - infectados")
-plt.plot(t, R_B, label="R_B(t) - recuperados")
-plt.xlabel("Tiempo [h]")
-plt.ylabel("Número de equipos")
-plt.title("Modelo B: sistema lineal con recuperación")
-plt.legend()
-plt.grid(True)
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.plot(t, S_B, label="S_B(t) - susceptibles")
+ax.plot(t, I_B, label="I_B(t) - infectados")
+ax.plot(t, R_B, label="R_B(t) - recuperados")
+ax.set_xlabel("Tiempo [h]")
+ax.set_ylabel("Número de equipos")
+ax.set_title("Modelo B: sistema lineal con recuperación")
+ax.legend(frameon=False)
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
 plt.tight_layout()
-plt.show()
+plt.savefig("parte2/modelo_b.pdf", format="pdf", bbox_inches="tight")
