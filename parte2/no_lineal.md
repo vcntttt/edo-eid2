@@ -139,7 +139,7 @@ El método adaptativo:
 - aumenta el paso cuando la solución es suave,
 - mantiene la precisión sin gastar tiempo de cómputo innecesario.
 
-## 9. Resumen para informes
+## 9. Resumen
 
 > El integrador `solve_ivp` utiliza por defecto el método de Runge–Kutta de orden
 > 4–5 de Dormand–Prince (RK45), un método adaptativo que estima el error local
