@@ -56,7 +56,7 @@ anotaciones = {
     "S≈0": {"txt": "S ≈ 0", "col": "black", "off": (10, 20)},
     "R=I": {"txt": "R ≈ I", "col": "green", "off": (30, 0)},
     "R≈N": {"txt": "R ≈ N", "col": "brown", "off": (10, -30)},
-    "I≈0": {"txt": "I ≈ 0", "col": "orange", "off": (10, -40)},
+    "I≈0": {"txt": "I ≈ 0", "col": "orange", "off": (10, 40)},
 }
 
 fig, ax = plt.subplots(figsize=(10, 5))

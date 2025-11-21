@@ -77,7 +77,7 @@ anotaciones = {
     "S=I_1": {"txt": "S ≈ I (1)", "col": "purple", "off": (10, 30)},
     "S=I_2": {"txt": "S ≈ I (2)", "col": "purple", "off": (10, -30)},
     "S≈0": {"txt": "S ≈ 0", "col": "black", "off": (10, 20)},
-    "R=I": {"txt": "R ≈ I", "col": "green", "off": (30, 0)},
+    "R=I": {"txt": "R ≈ I", "col": "green", "off": (30, 40)},
     "R≈1000": {"txt": "R ≈ 1000", "col": "brown", "off": (10, -30)},
 }
 

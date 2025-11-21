@@ -30,7 +30,7 @@ if len(indice_imax) > 0:
 
 # grafico
 anotaciones = {
-    "S=I": {"txt": "S ≈ I", "col": "purple", "off": (10, 30)},
+    "S=I": {"txt": "S ≈ I", "col": "purple", "off": (20, 0)},
     "S≈0": {"txt": "S ≈ 0", "col": "black", "off": (10, 20)},
     "I≈N": {"txt": "I ≈ N", "col": "orange", "off": (10, -30)},
 }
